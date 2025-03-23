@@ -1,0 +1,25 @@
+<div class="home-container">
+  <nav class="navbar">
+    <div class="HomeTitle">
+      <h1>Authentication Application</h1>
+    </div>
+    <div class="HomeUser">
+      <h3 *ngIf="user">{{ user.username }}</h3>
+      <button class="Logoutbtn" (click)="handleLogout()">Logout</button>
+    </div>
+  </nav>
+  <div class="content">
+    <aside class="sidebar">
+      <ul>
+        <li>Dashboard</li>
+        <li>Profile</li>
+        <li>Settings</li>
+        <li (click)="handleLogout()">Logout</li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <h2>Home Page</h2>
+      <p>Welcome to your dashboard! You are now logged in.</p>
+    </main>
+  </div>
+</div>

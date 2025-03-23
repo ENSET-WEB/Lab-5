@@ -1,0 +1,37 @@
+<div class="principal">
+  <div class="LoginDiv">
+    <h1>Welcome</h1>
+    <h3>Login to Your Account</h3>
+    <form
+      class="LoginCredentials"
+      (ngSubmit)="handleSubmit()"
+      #loginForm="ngForm"
+    >
+      <label for="username">Username</label>
+      <input
+        class="LoginInput"
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Enter your username"
+        [(ngModel)]="formData.username"
+        required
+      />
+      <label for="password">Password</label>
+      <input
+        class="LoginInput"
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        [(ngModel)]="formData.password"
+        required
+      />
+      <button type="submit" class="LoginSubmit" [disabled]="!loginForm.valid">
+        Login
+      </button>
+    </form>
+    <p>Don't have an account? <a routerLink="/signup">Signup</a></p>
+    <p *ngIf="message">{{ message }}</p>
+  </div>
+</div>
