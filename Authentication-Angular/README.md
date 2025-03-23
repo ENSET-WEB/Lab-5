@@ -37,7 +37,6 @@ This project is a simple authentication application built using **Angular** and 
    - Manages the authentication state (logged-in user) using `BehaviorSubject`.
    - Provides methods for login, signup, logout, and checking authentication status.
 
-
 ### Styling
 
 - CSS files are used for styling individual pages (`login.component.css`, `signup.component.css`, `home.component.css`) and global styles (`styles.css`).
@@ -66,9 +65,7 @@ This project is a simple authentication application built using **Angular** and 
 
 ## Key Scripts
 
-- `npm start`: Starts the Angular development server.
-- `npm run build`: Builds the application for production.
-- `npm run test`: Runs unit tests.
+- `ng serve`: Starts the Angular development server.
 - `npm run json-server`: Starts JSON Server to simulate a backend.
 
 ## Dependencies

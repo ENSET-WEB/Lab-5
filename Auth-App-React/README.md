@@ -91,8 +91,6 @@ This project is a simple authentication application built using **React**, **Typ
 
 ```
 Auth-App-React/
-├── db/                     # Mock backend data
-│   └── db.json
 ├── src/                    # Source code
 │   ├── context/            # Context API for authentication
 │   │   └── AuthContext.tsx
