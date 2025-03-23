@@ -6,8 +6,6 @@ This project is a simple authentication application built using **Angular** and 
 
 - **User Authentication**: Users can sign up and log in with their credentials.
 - **Protected Routes**: Certain pages are accessible only to authenticated users.
-- **State Management**: Authentication state is managed using Angular services and `BehaviorSubject`.
-- **Responsive Design**: The application is styled to look good on various screen sizes.
 - **Mock Backend**: JSON Server is used to simulate a backend for user data.
 
 ## Project Structure
@@ -39,11 +37,6 @@ This project is a simple authentication application built using **Angular** and 
    - Manages the authentication state (logged-in user) using `BehaviorSubject`.
    - Provides methods for login, signup, logout, and checking authentication status.
 
-### Mock Backend
-
-- **`db.json`**:
-  - Stores user data in a JSON format.
-  - Used by JSON Server to simulate a backend.
 
 ### Styling
 
